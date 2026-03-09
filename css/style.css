@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 main {
     grid-area: main;
-    padding: 20px;
+    padding: 40px;
     background-color: #f5f7fa;
 }
 
@@ -158,6 +158,7 @@ footer {
     max-width: 500px;
     margin:auto;
     display: flex;
+    flex-direction: column;
     gap : 10px;
     
 }
@@ -165,12 +166,14 @@ footer {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
 .contact-form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
    
 }
 
