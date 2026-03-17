@@ -6,7 +6,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #e5e7eb;
+    color: #bdd9bf;
     display: grid;
     grid-template-areas: 
         "header"
@@ -51,19 +51,13 @@ body {
     color: #00bcd4;
 }
 
-.shownav {
-    height: 0.8em;
-    width: 1.25em;
-    display: block;
-    border-top: 0.2em solid white;
-    border-bottom: 0.2em solid white;
-    
-}
 
 header {
     grid-area: header;
-    background-color: #1e1e2f;
+    background-color: rgb(41, 41, 71);
     color: white;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
     
@@ -116,26 +110,28 @@ footer {
     color: white;
 }
 
-menu-toggle {
+.menu-toggle {
     display: none;
     font-size: 24px;
     background: none;
     border: none;
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width : 1000px) {
     nav ul {
+        max-height: 0;
+        overflow: hidden;
         display: none;
         flex-direction: column;
-        align-items: start;
+        align-items: end;
         gap: 10px;
+        transition: max-height 1s;
+
     }
     
-    .shownav{
-        display: block;
-        margin: 10px;
-        cursor: pointer;
-    }
+    
 
     nav ul li a {
         display: block;
@@ -154,6 +150,12 @@ menu-toggle {
 
     .menu-toggle {
         display: block;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked ~ nav ul {
+    display: flex;
+    max-height: 300px;
     }
 
     .nav links{
@@ -166,6 +168,10 @@ menu-toggle {
         grid-template-columns: 1fr;
     }
 }
+#menu-toggle{
+    display: none;
+}
+
 
 .projects {
     display: grid;
@@ -182,7 +188,7 @@ menu-toggle {
 }
 
 .projects-card {
-    background-color:white;
+    background-color:rgb(41, 41, 71);
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -239,14 +245,16 @@ section {
 
 h2 {
     margin-bottom: 32px;
-    font-size: 20px;
-    color: #00bcd4;
+    font-size: 24px;
+    color: #7da3aa;
+    box-shadow: 0 4px 10px rgb(41, 41, 71);
 }
 
 p {
     line-height: 1.6;
     max-width: 700px;
     margin: auto;
+    font-size: 32px;
 }
 
 section h2 {
@@ -259,6 +267,7 @@ section h2 {
     color: white;
     text-align: center;
     padding: 80px 20px;
+    font-size: 21px;
 
 }
 .skill-grid {
@@ -269,7 +278,7 @@ section h2 {
 }
 
 .skill-card {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgb(41, 41, 71);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -285,6 +294,6 @@ section h2 {
     background-color: rgba(10,20,40,0.85);
     color: white;
     text-align: center;
-    padding: 80px,20px;
+    padding: 80px 20px;
     text-align: center;
 } 
