@@ -296,4 +296,36 @@ section h2 {
     text-align: center;
     padding: 80px 20px;
     text-align: center;
-} 
+}
+
+.report{
+    background: #f4fff4;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.report-section {
+    background: #7da3aa;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.report h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+.report h3{
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.report p {
+    color: #333;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 18px;
+}
